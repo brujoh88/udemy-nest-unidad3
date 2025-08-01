@@ -1,0 +1,11 @@
+###Sumilar una peticion al localhost:3000 en este archivo .http
+GET http://localhost:3000
+Accept: application/json
+
+
+###Sumilar una peticion al localhost:3000/cars en este archivo .http
+GET http://localhost:3000/cars
+Accept: application/json
+
+
+
