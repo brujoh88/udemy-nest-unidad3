@@ -4,6 +4,6 @@ import { Controller, Get } from '@nestjs/common';
 export class CarsController {
   @Get()
   getAllCars() {
-    return ['Toyota', 'Ford', 'Honda'];
+    return ['Toyota', 'Ford', 'Honda', 'Reanult'];
   }
 }
