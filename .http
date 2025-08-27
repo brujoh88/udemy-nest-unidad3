@@ -7,5 +7,7 @@ Accept: application/json
 GET http://localhost:3000/cars
 Accept: application/json
 
-
+###Simular una peticion de cars pero con id
+GET http://localhost:3000/cars/1
+Accept: application/json
 
