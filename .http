@@ -11,7 +11,7 @@ Accept: application/json
 GET http://localhost:3000/cars/1
 Accept: application/json
 
-###Simular una peticion POST a cars
+###Simular una peticion POST a cars (INCORRECTO)
 POST http://localhost:3000/cars
 Content-Type: application/json
 Accept: application/json
@@ -20,6 +20,26 @@ Accept: application/json
   "brand": "Chevrolet",
   "model": "Camaro",
   "year": 2024
+}
+
+###Simular una peticion POST a cars (INCORRECTO)
+POST http://localhost:3000/cars
+Content-Type: application/json
+Accept: application/json
+
+{
+  "brand": "Chevrolet",
+  "model": "MODELO SUPER LARGO" 
+}
+
+###Simular una peticion POST a cars (CORRECTO)
+POST http://localhost:3000/cars
+Content-Type: application/json
+Accept: application/json
+
+{
+  "brand": "Chevrolet",
+  "model": "Camaro" 
 }
 
 ### Simular la actualizacion de un car con PATCH
