@@ -11,3 +11,26 @@ Accept: application/json
 GET http://localhost:3000/cars/1
 Accept: application/json
 
+###Simular una peticion POST a cars
+POST http://localhost:3000/cars
+Content-Type: application/json
+Accept: application/json
+
+{
+  "brand": "Chevrolet",
+  "model": "Camaro",
+  "year": 2024
+}
+
+### Simular la actualizacion de un car con PATCH
+PATCH http://localhost:3000/cars/1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "model": "Corvette"
+}
+
+### DELETE un car
+DELETE http://localhost:3000/cars/1
+Accept: application/json
